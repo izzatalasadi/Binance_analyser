@@ -11,7 +11,6 @@ This project is an asynchronous cryptocurrency analysis bot that integrates with
 ## Features
 - **Market Data**: Fetches real-time and historical market data from Binance.
 - **Technical Indicators**: Calculates RSI, MACD, VWAP, Bollinger Bands, ATR, and more.
-- **News Sentiment**: Analyzes cryptocurrency news sentiment using the `CryptoPanicScraper`.
 - **Backtesting**: Backtests the trading strategy on historical data.
 - **Order Book**: Fetches and analyzes the order book for real-time predictions.
 - **WebSocket Streaming**: Supports real-time data streaming through Binance WebSocket.
@@ -28,7 +27,6 @@ This project is an asynchronous cryptocurrency analysis bot that integrates with
 - **predict_price(self, rsi, bids, asks, short_ma, long_ma, vwap, macd, macd_signal, bb_upper, bb_lower, atr, stochastic, obv, weights)**: Predicts the price and action (buy/sell/hold) based on technical indicators and order book data.
 - **pick_coins(self, cointickers, day_corr, week_corr, two_week_corr, size_of_list)**: Selects the top-performing coins based on correlations with close prices.
 - **backtest_strategy(self, historical_data, weights, transaction_cost, slippage)**: Backtests the trading strategy on historical data.
-- **get_news_and_sentiment(self, ticker, bridge, filter, news_limit)**: Fetches news and analyzes sentiment for a given ticker using CryptoPanicScraper.
 - **get_top_gainers(self)**: Fetches the top gainers (coins with the highest percentage price change).
 - **get_top_losers(self)**: Fetches the top losers (coins with the lowest percentage price change).
 - **get_market_analysis(self, symbol)**: Fetches and calculates market analysis (moving averages, RSI) for the specified symbol.
@@ -42,7 +40,6 @@ This project is an asynchronous cryptocurrency analysis bot that integrates with
 - `binance`
 - `asyncio`
 - `ssl`
-- `nltk`
 - `certifi`
 - `pandas`
 - `numpy`
